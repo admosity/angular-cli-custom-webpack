@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import * as testJson from './test.json';
+import * as testMd from './test.md';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  testJson = testJson.data;
+  testLoadMarkdown = testMd;
 }

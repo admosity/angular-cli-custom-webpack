@@ -26,6 +26,10 @@
       "environments": {
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
+      },
+      "extraWebpack": {
+        "production": "../webpack-custom.js",
+        "development": "../webpack-custom.js"
       }
     }
   ],
